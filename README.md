@@ -14,7 +14,7 @@ A computationally efficient **2.5D vector-based ray-tracing approach** was devel
 This shadow modeling framework identifies rooftops that remain unshaded during critical solar hours and is designed to be scalable for city-wide and metropolitan-level solar energy assessments.
 
 <p align="center">
-  <img src="figures/2.5D Raycasting Shadow Analysis.jpeg" width="750">
+  <img src="figures/2.5D Raycasting Shadow Analysis.jpeg" width="450">
 </p>
 <p align="center">
   <em>Conceptual illustration of the 2.5D vector raycasting approach for modeling inter-building shadows and identifying shaded and unshaded rooftop regions.</em>
@@ -27,7 +27,7 @@ For rooftops identified as suitable through shadow analysis, transfer learning w
 
 The model leverages residual connections and multi-scale feature extraction to capture both fine-grained spatial details and high-level rooftop characteristics. This enables robust segmentation across diverse rooftop shapes, materials, and urban contexts. The trained model achieved a validation Intersection-over-Union (IoU) of 0.76 and an overall accuracy of 93%, indicating strong generalization performance.
 
-<p align="center"> <img src="figures/Segmentation Performance Test Image.jpeg" width="750"> </p> <p align="center"> <em>Example segmentation results showing identification of usable rooftop areas from satellite imagery.</em> </p> <p align="center"> <img src="figures/Model Performance.jpeg" width="650"> </p> <p align="center"> <em>Training and validation performance of the deep learning model.</em> </p>
+<p align="center"> <img src="figures/Segmentation Performance Test Image.jpeg" width="450"> </p> <p align="center"> <em>Example segmentation results showing identification of usable rooftop areas from satellite imagery.</em> </p> <p align="center"> <img src="figures/Model Performance.jpeg" width="650"> </p> <p align="center"> <em>Training and validation performance of the deep learning model.</em> </p>
 
 ---
 
@@ -35,13 +35,13 @@ The model leverages residual connections and multi-scale feature extraction to c
 
 Usable rooftop area is derived directly from the segmentation output using the Ground Sampling Distance (GSD) of the satellite imagery. Each segmented pixel represents a fixed real-world surface area defined by the image resolution. By aggregating pixels classified as usable rooftop, the framework converts deep learning outputs into physically meaningful rooftop area estimates, ensuring consistency between image-based analysis and geospatial energy modeling.
 
-<p align="center"> <img src="figures/GSD Calculation.jpeg" width="360"> <img src="figures/Photogametry.jpeg" width="360"> </p> <p align="center"> <em>Conceptual illustration of GSD-based pixel-to-area conversion and photogrammetric interpretation of rooftop surfaces.</em> </p>
+<p align="center"> <img src="figures/GSD Calculation.jpeg" width="260"> <img src="figures/Photogametry.jpeg" width="260"> </p> <p align="center"> <em>Conceptual illustration of GSD-based pixel-to-area conversion and photogrammetric interpretation of rooftop surfaces.</em> </p>
 
 ### 4. Solar Potential Assessment
 
 The shadow-free usable rooftop areas are subsequently used to estimate rooftop solar PV potential by incorporating standard assumptions related to panel efficiency, installation density, and local solar irradiance conditions. This enables robust rooftop-level and city-wide solar potential assessment suitable for urban energy planning and policy support.
 
-<p align="center"> <img src="figures/Solar Potential Assessment.jpeg" width="750"> </p> <p align="center"> <em>Workflow for rooftop-level and city-wide solar potential assessment based on usable rooftop area.</em> </p>
+<p align="center"> <img src="figures/Solar Potential Assessment.jpeg" width="350"> </p> <p align="center"> <em>Workflow for rooftop-level and city-wide solar potential assessment based on usable rooftop area.</em> </p>
 
 ## Data Sources
 - High-resolution satellite imagery (Google Earth)
