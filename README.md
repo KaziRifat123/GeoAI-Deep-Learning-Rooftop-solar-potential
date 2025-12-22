@@ -27,7 +27,7 @@ For rooftops identified as suitable through shadow analysis, transfer learning w
 
 The model leverages residual connections and multi-scale feature extraction to capture both fine-grained spatial details and high-level rooftop characteristics. This enables robust segmentation across diverse rooftop shapes, materials, and urban contexts. The trained model achieved a validation Intersection-over-Union (IoU) of 0.76 and an overall accuracy of 93%, indicating strong generalization performance.
 
-<p align="center"> <img src="figures/Segmentation Performance Test Image.jpeg" width="750"> </p> <p align="center"> <em>Example segmentation results showing identification of usable rooftop areas from satellite imagery.</em> </p> <p align="center"> <img src="figures/Model Performance.jpeg" width="650"> </p> <p align="center"> <em>Training and validation performance of the deep learning model during transfer learning.</em> </p>
+<p align="center"> <img src="figures/Segmentation Performance Test Image.jpeg" width="750"> </p> <p align="center"> <em>Example segmentation results showing identification of usable rooftop areas from satellite imagery.</em> </p> <p align="center"> <img src="figures/Model Performance.jpeg" width="650"> </p> <p align="center"> <em>Training and validation performance of the deep learning model.</em> </p>
 
 ---
 
