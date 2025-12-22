@@ -8,9 +8,18 @@ This repository presents a research-oriented GeoAI framework for estimating roof
 The proposed framework consists of two tightly coupled components: large-scale shadow modeling and deep learning–based rooftop analysis.
 
 ### 1. Large-Scale Shadow Modeling Using 2.5D Vector Ray Tracing
+
 A computationally efficient **2.5D vector-based ray-tracing approach** was developed and applied to over **600,000 buildings** to model inter-building shadow interactions. The method leverages physics-based parametric representations of ray propagation derived from the laws of optics, enabling realistic simulation of solar obstruction effects in complex urban morphologies.
 
 This shadow modeling framework identifies rooftops that remain unshaded during critical solar hours and is designed to be scalable for city-wide and metropolitan-level solar energy assessments.
+
+<p align="center">
+  <img src="figures/2.5D Raycasting Shadow Analysis.jpeg" width="750">
+</p>
+<p align="center">
+  <em>Conceptual illustration of the 2.5D vector raycasting approach for modeling inter-building shadows and identifying shaded and unshaded rooftop regions.</em>
+</p>
+
 
 ### 2. Deep Learning–Based Rooftop Segmentation
 For the rooftops identified as suitable through shadow analysis, **transfer learning with a deep convolutional neural network (DCNN)** is applied to delineate usable rooftop areas. A U-Net architecture with a **ResNet50 encoder** is used to segment rooftop surfaces and identify zones suitable for solar panel installation.
