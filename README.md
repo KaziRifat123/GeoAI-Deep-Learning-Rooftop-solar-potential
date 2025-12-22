@@ -22,9 +22,12 @@ This shadow modeling framework identifies rooftops that remain unshaded during c
 
 
 ### 2. Deep Learning–Based Rooftop Segmentation
-For the rooftops identified as suitable through shadow analysis, **transfer learning with a deep convolutional neural network (DCNN)** is applied to delineate usable rooftop areas. A U-Net architecture with a **ResNet50 encoder** is used to segment rooftop surfaces and identify zones suitable for solar panel installation.
 
-By leveraging residual connections and multi-scale feature extraction, the model captures both low-level spatial details and high-level rooftop semantics. The segmentation model achieved a **validation Intersection-over-Union (IoU) of 0.76** and an overall accuracy of **93%**, demonstrating strong generalization across diverse rooftop typologies.
+For rooftops identified as suitable through shadow analysis, transfer learning with a deep convolutional neural network (DCNN) is applied to delineate usable rooftop areas. A U-Net architecture with a ResNet50 encoder is used to segment rooftop surfaces from high-resolution satellite imagery and identify zones suitable for solar panel installation.
+
+The model leverages residual connections and multi-scale feature extraction to capture both fine-grained spatial details and high-level rooftop characteristics. This enables robust segmentation across diverse rooftop shapes, materials, and urban contexts. The trained model achieved a validation Intersection-over-Union (IoU) of 0.76 and an overall accuracy of 93%, indicating strong generalization performance.
+
+<p align="center"> <img src="figures/Segmentation Performance Test Image.jpeg" width="750"> </p> <p align="center"> <em>Example segmentation results showing identification of usable rooftop areas from satellite imagery.</em> </p> <p align="center"> <img src="figures/Model Performance.jpeg" width="650"> </p> <p align="center"> <em>Training and validation performance of the deep learning model during transfer learning.</em> </p>
 
 ---
 
