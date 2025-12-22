@@ -59,6 +59,3 @@ If you use this work, please cite:
 
 ---
 
-## Author
-**Your Name**  
-Research interests: GeoAI, Deep Learning, Remote Sensing, Urban Analytics, Urban Energy Systems
