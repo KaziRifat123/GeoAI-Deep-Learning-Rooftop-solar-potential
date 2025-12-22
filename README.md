@@ -31,19 +31,21 @@ The model leverages residual connections and multi-scale feature extraction to c
 
 ---
 
-## Rooftop Area Estimation Using GSD
-Usable rooftop area is derived directly from the segmentation output using the **Ground Sampling Distance (GSD)** of the satellite imagery. Each segmented pixel corresponds to a fixed real-world surface area defined by the image resolution. By aggregating pixels classified as usable rooftop, the framework converts deep learning predictions into physically meaningful rooftop area estimates, ensuring consistency between image-based analysis and geospatial energy modeling.
+### 3. Rooftop Area Estimation Using GSD
 
----
+Usable rooftop area is derived directly from the segmentation output using the Ground Sampling Distance (GSD) of the satellite imagery. Each segmented pixel represents a fixed real-world surface area defined by the image resolution. By aggregating pixels classified as usable rooftop, the framework converts deep learning outputs into physically meaningful rooftop area estimates, ensuring consistency between image-based analysis and geospatial energy modeling.
 
-## Solar Potential Assessment
+<p align="center"> <img src="figures/GSD Calculation.jpeg" width="360"> <img src="figures/Photogametry.jpeg" width="360"> </p> <p align="center"> <em>Conceptual illustration of GSD-based pixel-to-area conversion and photogrammetric interpretation of rooftop surfaces.</em> </p>
+
+### 4. Solar Potential Assessment
+
 The shadow-free usable rooftop areas are subsequently used to estimate rooftop solar PV potential by incorporating standard assumptions related to panel efficiency, installation density, and local solar irradiance conditions. This enables robust rooftop-level and city-wide solar potential assessment suitable for urban energy planning and policy support.
 
----
+<p align="center"> <img src="figures/Solar Potential Assessment.jpeg" width="750"> </p> <p align="center"> <em>Workflow for rooftop-level and city-wide solar potential assessment based on usable rooftop area.</em> </p>
 
 ## Data Sources
 - High-resolution satellite imagery (Google Earth)
-- Building footprint and height data from urban planning geodatabases
+- Building footprint and height data from RAJUK Detailed Area Plan (2016-35)
 - Solar geometry and irradiance modeling using pvlib
 
 ---
