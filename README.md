@@ -41,7 +41,7 @@ Usable rooftop area is derived directly from the segmentation output using the G
 
 The shadow-free usable rooftop areas are subsequently used to estimate rooftop solar PV potential by incorporating standard assumptions related to panel efficiency, installation density, and local solar irradiance conditions. This enables robust rooftop-level and city-wide solar potential assessment suitable for urban energy planning and policy support.
 
-<p align="center"> <img src="figures/Solar Potential Assessment.jpeg" width="350"> </p> <p align="center"> <em>Workflow for rooftop-level and city-wide solar potential assessment based on usable rooftop area.</em> </p>
+<p align="center"> <img src="figures/Solar Potential Assessment.jpeg" width="250"> </p> <p align="center"> <em>Workflow for rooftop-level and city-wide solar potential assessment based on usable rooftop area.</em> </p>
 
 ## Data Sources
 - High-resolution satellite imagery (Google Earth)
